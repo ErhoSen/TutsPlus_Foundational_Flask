@@ -1,4 +1,5 @@
-This is final code for Tuts+ course [*Foundational_Flaskhow*](http://code.tutsplus.com/courses/foundational-flask-creating-your-own-static-blog-generator) and also how my blog(http://erhosen.github.io/) generates. 
+This is final code for Tuts+ course [**Foundational Flask**](http://code.tutsplus.com/courses/foundational-flask-creating-your-own-static-blog-generator) 
+and also how my [blog](http://erhosen.github.io/) generates. 
 
     python generator.py
     python generator.py build # creates a directory, with static files, which I commit to github
