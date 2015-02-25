@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    {% block head %}
+        <title>My Awesome Blog</title>
+    {% endblock head %}
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/syntax.css') }}">
+
+    <!-- AtomFeed -->
+    <link href="{{ url_for('feed') }}" rel="alternate" title="Recent Changes" type="application/atom+xml">
+
+</head>
+<body>
+    <div id="header">
+        <H1><a style="color: #000000" href="{{ url_for('index') }}">Title</a></H1>
+        <div id="menu">
+            <a style="color: #000000" href="{{ url_for('post', path='about') }}">about</a> |
+            <a style="color: #000000" href="{{ url_for('post', path='projects') }}">projects</a> |
+            <a style="color: #000000" href="{{ url_for('post', path='courses') }}">courses</a> |
+            <a style="color: #000000" href="{{ url_for('post', path='cv') }}">CV</a>
+        </div>
+    </div>
+
+    {% block content %}
+
+    {% endblock content %}
+
+</body>
+</html>
